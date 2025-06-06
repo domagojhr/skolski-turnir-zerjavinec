@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Školski turnir 2025. - Žerjavinec</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+	.logo img {
+		width: 70px;
+		height: auto;
+	}
+    .note {
+      color: gray;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 768px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-4">
+	<div class="logo text-center mb-4"><img src="prigorje_zerjavinec.png"/></div><h1 class="text-center mb-4">Školski turnir - Poredak</h1>
+  </div>
+  <div class="container py-4">
+	<p><a href="subota.html">Subota</a> | <a href="nedjelja.html">Nedjelja</a> | <strong>Sve skupine</strong></p>
+    <div id="tables"></div>
+  </div>
+
+<script>
+
+	async function loadData() {
+	  const timestamp = new Date().getTime(); // Avoid caching
+
+	  const teamsRes = await fetch(`teams.json?t=${timestamp}`);
+	  const matchesRes = await fetch(`matches.json?t=${timestamp}`);
+
+	  const teamsData = await teamsRes.json();
+	  const matchesData = await matchesRes.json();
+
+	  const standings = calculateStandings(teamsData, matchesData);
+	  renderTables(standings, matchesData);
+	}	
+
+	function adjustTeamPosition(groupName, teamName, targetPos) {
+	  // Kad se pozove adjustTeamPosition, zaustavi automatsko osvježavanje
+	  // za korištenje u iznimnoj situaciji gdje nije moguće odrediti poredak preko propozicijama
+	  // Primjer korištenja: adjustTeamPosition('Naziv grupe', 'Naziv razreda', 3);
+	  
+	  if (refreshInterval !== null) {
+		clearInterval(refreshInterval);
+		refreshInterval = null;
+		console.log('Auto-refresh je zaustavljen zbog ručne promjene poretka.');
+	  }
+	  const container = document.getElementById('tables');
+	  // Pronađi h2 koji označava grupu
+	  const headers = container.querySelectorAll('h2');
+	  let groupIndex = -1;
+
+	  for (let i = 0; i < headers.length; i++) {
+		if (headers[i].textContent === groupName) {
+		  groupIndex = i;
+		  break;
+		}
+	  }
+	  if (groupIndex === -1) {
+		console.warn(`Grupa "${groupName}" nije pronađena.`);
+		return;
+	  }
+
+	  // Tablica je odmah nakon h2
+	  const tables = container.querySelectorAll('table');
+	  const table = tables[groupIndex];
+	  if (!table) {
+		console.warn(`Tablica za grupu "${groupName}" nije pronađena.`);
+		return;
+	  }
+
+	  const tbody = table.querySelector('tbody');
+	  if (!tbody) {
+		console.warn(`Tabela nema tbody.`);
+		return;
+	  }
+
+	  // Pronađi red tima
+	  const rows = Array.from(tbody.querySelectorAll('tr'));
+	  const teamRowIndex = rows.findIndex(row => {
+		// U 2. ćeliji (indeks 1) je ime tima, može imati i zvjezdicu
+		const cellText = row.cells[1].textContent.replace(' *', '').trim();
+		return cellText === teamName;
+	  });
+
+	  if (teamRowIndex === -1) {
+		console.warn(`Tim "${teamName}" nije pronađen u grupi "${groupName}".`);
+		return;
+	  }
+
+	  // Izvuci red za pomicanje
+	  const teamRow = rows[teamRowIndex];
+	  rows.splice(teamRowIndex, 1);
+
+	  // Ciljana pozicija je indeks u nizu (od 1), treba pretvoriti u indeks od 0
+	  const targetIndex = targetPos - 1;
+
+	  // Ograniči targetIndex da bude unutar granica
+	  const insertIndex = Math.min(Math.max(targetIndex, 0), rows.length);
+
+	  // Umetni red na željeno mjesto
+	  rows.splice(insertIndex, 0, teamRow);
+
+	  // Ponovno upiši redove u tbody i prilagodi brojeve poretka (1. kolona)
+	  tbody.innerHTML = '';
+	  rows.forEach((row, i) => {
+		row.cells[0].textContent = i + 1; // postavi novi redni broj
+		tbody.appendChild(row);
+	  });
+	}
+
+
+  function calculateStandings(teamsByGroup, matches) {
+    const standings = {};
+    for (const [group, teams] of Object.entries(teamsByGroup)) {
+      standings[group] = teams.map(name => ({
+        team: name,
+        played: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        goalsFor: 0,
+        goalsAgainst: 0,
+        goalDifference: 0,
+        points: 0
+      }));
+    }
+
+    for (const match of matches) {
+      if (match.goals1 === null || match.goals2 === null) continue;
+
+      for (const [group, teams] of Object.entries(teamsByGroup)) {
+        if (teams.includes(match.team1) && teams.includes(match.team2)) {
+          const s = standings[group];
+          const team1 = s.find(t => t.team === match.team1);
+          const team2 = s.find(t => t.team === match.team2);
+
+          if (!team1 || !team2) continue;
+
+          team1.played++; team2.played++;
+          team1.goalsFor += match.goals1;
+          team1.goalsAgainst += match.goals2;
+          team2.goalsFor += match.goals2;
+          team2.goalsAgainst += match.goals1;
+
+          team1.goalDifference = team1.goalsFor - team1.goalsAgainst;
+          team2.goalDifference = team2.goalsFor - team2.goalsAgainst;
+
+          if (match.goals1 > match.goals2) {
+            team1.wins++; team2.losses++;
+            team1.points += 3;
+          } else if (match.goals1 < match.goals2) {
+            team2.wins++; team1.losses++;
+            team2.points += 3;
+          } else {
+            team1.draws++; team2.draws++;
+            team1.points += 1; team2.points += 1;
+          }
+        }
+      }
+    }
+
+    return standings;
+  }
+
+  function getMiniTableStats(groupMatches, teamNames) {
+    const stats = {};
+    for (const name of teamNames) {
+      stats[name] = {
+        team: name,
+        played: 0,
+        wins: 0,
+        draws: 0,
+        losses: 0,
+        goalsFor: 0,
+        goalsAgainst: 0,
+        goalDifference: 0,
+        points: 0
+      };
+    }
+
+    for (const match of groupMatches) {
+      if (
+        teamNames.includes(match.team1) &&
+        teamNames.includes(match.team2) &&
+        match.goals1 !== null &&
+        match.goals2 !== null
+      ) {
+        const t1 = stats[match.team1];
+        const t2 = stats[match.team2];
+
+        t1.played++; t2.played++;
+        t1.goalsFor += match.goals1;
+        t1.goalsAgainst += match.goals2;
+        t2.goalsFor += match.goals2;
+        t2.goalsAgainst += match.goals1;
+
+        t1.goalDifference = t1.goalsFor - t1.goalsAgainst;
+        t2.goalDifference = t2.goalsFor - t2.goalsAgainst;
+
+        if (match.goals1 > match.goals2) {
+          t1.wins++; t1.points += 3; t2.losses++;
+        } else if (match.goals1 < match.goals2) {
+          t2.wins++; t2.points += 3; t1.losses++;
+        } else {
+          t1.draws++; t2.draws++;
+          t1.points += 1; t2.points += 1;
+        }
+      }
+    }
+
+    return Object.values(stats);
+  }
+
+  function sortGroup(teams, matches) {
+    const grouped = {};
+
+    for (const team of teams) {
+      if (!grouped[team.points]) grouped[team.points] = [];
+      grouped[team.points].push(team);
+    }
+
+    const sortedPoints = Object.keys(grouped).map(Number).sort((a, b) => b - a);
+    const result = [];
+
+    for (const pts of sortedPoints) {
+      const group = grouped[pts];
+      if (group.length === 1) {
+        result.push(group[0]);
+      } else {
+        const active = group.filter(t => t.played > 0);
+        const inactive = group.filter(t => t.played === 0);
+
+        const names = active.map(t => t.team);
+        const miniStats = getMiniTableStats(matches, names);
+
+        for (const stat of miniStats) {
+          const original = teams.find(t => t.team === stat.team);
+          stat.fullGoalDifference = original.goalDifference;
+          stat.fullGoalsFor = original.goalsFor;
+        }
+
+        const sortedMini = miniStats.sort((a, b) => {
+          if (b.points !== a.points) return b.points - a.points;
+          if (b.fullGoalDifference !== a.fullGoalDifference)
+            return b.fullGoalDifference - a.fullGoalDifference;
+          if (b.fullGoalsFor !== a.fullGoalsFor)
+            return b.fullGoalsFor - a.fullGoalsFor;
+          return 0;
+        });
+
+        let unresolved = false;
+        for (let i = 1; i < sortedMini.length; i++) {
+          const a = sortedMini[i - 1];
+          const b = sortedMini[i];
+          if (
+            a.points === b.points &&
+            a.fullGoalDifference === b.fullGoalDifference &&
+            a.fullGoalsFor === b.fullGoalsFor
+          ) {
+            unresolved = true;
+            break;
+          }
+        }
+
+        for (const stat of sortedMini) {
+          const fullTeam = group.find(t => t.team === stat.team);
+          if (unresolved) fullTeam.ambiguous = true;
+          result.push(fullTeam);
+        }
+
+        for (const t of inactive) {
+          result.push(t);
+        }
+      }
+    }
+
+    return result;
+  }
+
+  function renderTables(standings, matches) {
+    const container = document.getElementById('tables');
+    container.innerHTML = '';
+
+    for (const [group, teams] of Object.entries(standings)) {
+      const sorted = sortGroup(teams, matches);
+      const caption = document.createElement('h2');
+      caption.textContent = group;
+      container.appendChild(caption);
+
+      if (sorted.some(t => t.ambiguous)) {
+        const note = document.createElement('p');
+        note.className = 'note';
+        note.textContent = 'Za ekipe s istim brojem bodova, rezultati se utvrđuju prema propozicijama - označeno s *';
+        container.appendChild(note);
+      }
+
+      const wrapper = document.createElement('div');
+      wrapper.className = 'table-responsive';
+
+      const table = document.createElement('table');
+      table.className = 'table table-bordered table-striped text-center';
+
+      const thead = document.createElement('thead');
+      thead.innerHTML = `
+        <tr class="table-light">
+          <th>#</th>
+          <th>Ekipa</th>
+          <th>U</th>
+          <th>P</th>
+          <th>N</th>
+          <th>I</th>
+          <th>G+</th>
+          <th>G-</th>
+          <th>GR</th>
+          <th>Bod</th>
+        </tr>`;
+      table.appendChild(thead);
+
+      const tbody = document.createElement('tbody');
+      sorted.forEach((team, i) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${i + 1}</td>
+          <td>${team.ambiguous ? team.team + ' *' : team.team}</td>
+          <td>${team.played}</td>
+          <td>${team.wins}</td>
+          <td>${team.draws}</td>
+          <td>${team.losses}</td>
+          <td>${team.goalsFor}</td>
+          <td>${team.goalsAgainst}</td>
+          <td>${team.goalDifference}</td>
+          <td>${team.points}</td>`;
+        tbody.appendChild(row);
+      });
+
+      table.appendChild(tbody);
+      wrapper.appendChild(table);
+      container.appendChild(wrapper);
+    }
+  }
+
+	let refreshInterval = null;
+
+	function startAutoRefresh() {
+	  if (refreshInterval) clearInterval(refreshInterval);
+	  refreshInterval = setInterval(loadData, 15000);
+	}
+
+	// Pokreni učitavanje i auto-refresh jednom na početku
+	loadData();
+	startAutoRefresh();
+</script>
+
+
+</body>
+</html>

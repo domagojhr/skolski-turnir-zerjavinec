@@ -1,0 +1,930 @@
+[
+  {
+    "team1": "6.A/D.Zel.",
+    "team2": "6.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T08:00"
+  },
+  {
+    "team1": "6.B/D.Zel.",
+    "team2": "6.N/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T08:00"
+  },
+  {
+    "team1": "5.A/D.Zel.",
+    "team2": "5.B/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T08:17"
+  },
+  {
+    "team1": "5.N/D.Zel.",
+    "team2": "5.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T08:17"
+  },
+  {
+    "team1": "6.A/Sob.",
+    "team2": "6./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T08:34"
+  },
+  {
+    "team1": "6.N/D.Zel.",
+    "team2": "6.B/M.Bis.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T08:34"
+  },
+  {
+    "team1": "5.B/Sob.",
+    "team2": "5.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T08:51"
+  },
+  {
+    "team1": "5.A/Sob.",
+    "team2": "5./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T08:51"
+  },
+  {
+    "team1": "6.A/D.Zel.",
+    "team2": "6.B/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T09:08"
+  },
+  {
+    "team1": "6.B/Sob.",
+    "team2": "6.N/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T09:08"
+  },
+  {
+    "team1": "5.A/D.Zel.",
+    "team2": "5.N/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T09:25"
+  },
+  {
+    "team1": "5.B/D.Zel.",
+    "team2": "5.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T09:25"
+  },
+  {
+    "team1": "6.A/Sob.",
+    "team2": "6.B/M.Bis.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T09:42"
+  },
+  {
+    "team1": "5.B/D.Zel.",
+    "team2": "5.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T09:42"
+  },
+  {
+    "team1": "5.B/Sob.",
+    "team2": "5./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T09:59"
+  },
+  {
+    "team1": "5.N/D.Zel.",
+    "team2": "5.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T09:59"
+  },
+  {
+    "team1": "6.A/D.Zel.",
+    "team2": "6.N/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T10:16"
+  },
+  {
+    "team1": "6.B/Sob.",
+    "team2": "6.B/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T10:16"
+  },
+  {
+    "team1": "5.A/D.Zel.",
+    "team2": "5.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T10:33"
+  },
+  {
+    "team1": "5.B/D.Zel.",
+    "team2": "5.N/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T10:33"
+  },
+  {
+    "team1": "6./Ada.",
+    "team2": "6.B/M.Bis.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T10:50"
+  },
+  {
+    "team1": "5.C/Sob.",
+    "team2": "5./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T10:50"
+  },
+  {
+    "team1": "6.A/D.Zel.",
+    "team2": "6.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T11:07"
+  },
+  {
+    "team1": "5.A/D.Zel.",
+    "team2": "5.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T11:07"
+  },
+  {
+    "team1": "6.B/Sob.",
+    "team2": "6./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T11:24"
+  },
+  {
+    "team1": "6.B/D.Zel.",
+    "team2": "6.B/M.Bis.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T11:24"
+  },
+  {
+    "team1": "5.B/D.Zel.",
+    "team2": "5.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T11:41"
+  },
+  {
+    "team1": "5.N/D.Zel.",
+    "team2": "5./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T11:41"
+  },
+  {
+    "team1": "6.N/D.Zel.",
+    "team2": "6.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T11:58"
+  },
+  {
+    "team1": "5.A/Sob.",
+    "team2": "5.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T11:58"
+  },
+  {
+    "team1": "6.A/D.Zel.",
+    "team2": "6./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T12:15"
+  },
+  {
+    "team1": "6.B/Sob.",
+    "team2": "6.B/M.Bis.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T12:15"
+  },
+  {
+    "team1": "5.A/D.Zel.",
+    "team2": "5.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T12:32"
+  },
+  {
+    "team1": "5.B/D.Zel.",
+    "team2": "5./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T12:32"
+  },
+  {
+    "team1": "6.A/D.Zel.",
+    "team2": "6.B/M.Bis.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T12:49"
+  },
+  {
+    "team1": "6.N/D.Zel.",
+    "team2": "6./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T12:49"
+  },
+  {
+    "team1": "5.A/D.Zel.",
+    "team2": "5./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T13:06"
+  },
+  {
+    "team1": "6.B/D.Zel.",
+    "team2": "6.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T13:06"
+  },
+  {
+    "team1": "5.N/D.Zel.",
+    "team2": "5.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T13:23"
+  },
+  {
+    "team1": "5.A/Sob.",
+    "team2": "5.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T13:23"
+  },
+  {
+    "team1": "6.B/Sob.",
+    "team2": "6.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T13:40"
+  },
+  {
+    "team1": "6.B/D.Zel.",
+    "team2": "6./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T13:40"
+  },
+  {
+    "team1": "7.A/D.Zel.",
+    "team2": "7.B/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T14:31"
+  },
+  {
+    "team1": "7.N/D.Zel.",
+    "team2": "7.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T14:31"
+  },
+  {
+    "team1": "8.C/Sob.",
+    "team2": "8.C/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T14:48"
+  },
+  {
+    "team1": "8.A/Sob.",
+    "team2": "8.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T14:48"
+  },
+  {
+    "team1": "7.B/Sob.",
+    "team2": "7.I/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T15:05"
+  },
+  {
+    "team1": "8.B/Sob.",
+    "team2": "8.B/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T15:05"
+  },
+  {
+    "team1": "7.A/D.Zel.",
+    "team2": "7.N/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T15:22"
+  },
+  {
+    "team1": "8.A/Ada.",
+    "team2": "8.B/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T15:22"
+  },
+  {
+    "team1": "8.C/Sob.",
+    "team2": "8.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T15:39"
+  },
+  {
+    "team1": "7.B/D.Zel.",
+    "team2": "7.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T15:39"
+  },
+  {
+    "team1": "7.B/Sob.",
+    "team2": "7.II/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T15:56"
+  },
+  {
+    "team1": "8.C/D.Zel.",
+    "team2": "8.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T15:56"
+  },
+  {
+    "team1": "7.A/D.Zel.",
+    "team2": "7.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T16:13"
+  },
+  {
+    "team1": "7.B/D.Zel.",
+    "team2": "7.N/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T16:13"
+  },
+  {
+    "team1": "7.I/Ada.",
+    "team2": "7.II/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T16:30"
+  },
+  {
+    "team1": "8.C/Sob.",
+    "team2": "8.A/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T16:30"
+  },
+  {
+    "team1": "8.C/D.Zel.",
+    "team2": "8.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T16:47"
+  },
+  {
+    "team1": "7.A/D.Zel.",
+    "team2": "7.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T16:47"
+  },
+  {
+    "team1": "8.C/Sob.",
+    "team2": "8.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T17:04"
+  },
+  {
+    "team1": "7.B/D.Zel.",
+    "team2": "7.I/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T17:04"
+  },
+  {
+    "team1": "7.N/D.Zel.",
+    "team2": "7.II/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T17:21"
+  },
+  {
+    "team1": "7.A/Sob.",
+    "team2": "7.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T17:21"
+  },
+  {
+    "team1": "8.C/D.Zel.",
+    "team2": "8.A/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T17:38"
+  },
+  {
+    "team1": "8.C/Sob.",
+    "team2": "8.B/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T17:38"
+  },
+  {
+    "team1": "7.A/D.Zel.",
+    "team2": "7.I/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T17:55"
+  },
+  {
+    "team1": "7.B/D.Zel.",
+    "team2": "7.II/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T17:55"
+  },
+  {
+    "team1": "8.A/Sob.",
+    "team2": "8.A/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T18:12"
+  },
+  {
+    "team1": "7.N/D.Zel.",
+    "team2": "7.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T18:12"
+  },
+  {
+    "team1": "7.A/D.Zel.",
+    "team2": "7.II/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T18:29"
+  },
+  {
+    "team1": "8.C/D.Zel.",
+    "team2": "8.B/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T18:29"
+  },
+  {
+    "team1": "8.B/Sob.",
+    "team2": "8.A/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T18:46"
+  },
+  {
+    "team1": "7.A/Sob.",
+    "team2": "7.I/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T18:46"
+  },
+  {
+    "team1": "7.B/D.Zel.",
+    "team2": "7.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T19:03"
+  },
+  {
+    "team1": "7.N/D.Zel.",
+    "team2": "7.I/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T19:03"
+  },
+  {
+    "team1": "8.A/Sob.",
+    "team2": "8.B/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-07T19:20"
+  },
+  {
+    "team1": "7.A/Sob.",
+    "team2": "7.II/Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-07T19:20"
+  },
+  {
+    "team1": "1.A/Sob.",
+    "team2": "1.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T09:00"
+  },
+  {
+    "team1": "2.A/D.Zel.",
+    "team2": "2.B/D.Zel.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T09:00"
+  },
+  {
+    "team1": "2.A/Sob.",
+    "team2": "2.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T09:20"
+  },
+  {
+    "team1": "2.C/Sob.",
+    "team2": "2./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T09:20"
+  },
+  {
+    "team1": "1.A/Sob.",
+    "team2": "1./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T09:40"
+  },
+  {
+    "team1": "2.A/D.Zel.",
+    "team2": "2.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T10:00"
+  },
+  {
+    "team1": "2.B/D.Zel.",
+    "team2": "2.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T10:00"
+  },
+  {
+    "team1": "1.B/Sob.",
+    "team2": "1./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T10:20"
+  },
+  {
+    "team1": "2.A/D.Zel.",
+    "team2": "2.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T10:40"
+  },
+  {
+    "team1": "2.B/D.Zel.",
+    "team2": "2.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T10:40"
+  },
+  {
+    "team1": "2.A/D.Zel.",
+    "team2": "2.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T11:20"
+  },
+  {
+    "team1": "2.B/D.Zel.",
+    "team2": "2./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T11:20"
+  },
+  {
+    "team1": "2.A/D.Zel.",
+    "team2": "2./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T12:00"
+  },
+  {
+    "team1": "2.B/D.Zel.",
+    "team2": "2.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T12:00"
+  },
+  {
+    "team1": "2.A/Sob.",
+    "team2": "2.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T12:40"
+  },
+  {
+    "team1": "2.B/Sob.",
+    "team2": "2./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T12:40"
+  },
+  {
+    "team1": "2.A/Sob.",
+    "team2": "2./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T13:00"
+  },
+  {
+    "team1": "2.B/Sob.",
+    "team2": "2.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T13:00"
+  },
+  {
+    "team1": "3.A/D.Zel.",
+    "team2": "3.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T15:00"
+  },
+  {
+    "team1": "3.B/Sob.",
+    "team2": "3.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T15:00"
+  },
+  {
+    "team1": "4.B/D.Zel.",
+    "team2": "4.A/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T15:20"
+  },
+  {
+    "team1": "4.B/Sob.",
+    "team2": "4./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T15:20"
+  },
+  {
+    "team1": "3.A/D.Zel.",
+    "team2": "3.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T15:40"
+  },
+  {
+    "team1": "3.A/Sob.",
+    "team2": "3.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T15:40"
+  },
+  {
+    "team1": "4.B/D.Zel.",
+    "team2": "4.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T16:00"
+  },
+  {
+    "team1": "4.A/Sob.",
+    "team2": "4./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T16:00"
+  },
+  {
+    "team1": "3.A/D.Zel.",
+    "team2": "3.C/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T16:20"
+  },
+  {
+    "team1": "3.A/Sob.",
+    "team2": "3.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T16:20"
+  },
+  {
+    "team1": "4.B/D.Zel.",
+    "team2": "4./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T16:40"
+  },
+  {
+    "team1": "4.A/Sob.",
+    "team2": "4.B/Sob.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T16:40"
+  },
+  {
+    "team1": "3.A/D.Zel.",
+    "team2": "3./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T17:00"
+  },
+  {
+    "team1": "4.B/D.Zel.",
+    "team2": "2.-4./Glav.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T17:00"
+  },
+  {
+    "team1": "4.B/Sob.",
+    "team2": "2.-4./Glav.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T17:20"
+  },
+  {
+    "team1": "3.A/Sob.",
+    "team2": "3./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T17:40"
+  },
+  {
+    "team1": "4.A/Sob.",
+    "team2": "2.-4./Glav.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T18:00"
+  },
+  {
+    "team1": "3.B/Sob.",
+    "team2": "3./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T18:20"
+  },
+  {
+    "team1": "3.C/Sob.",
+    "team2": "3./Ada.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 1",
+    "datetime": "2025-06-08T19:00"
+  },
+  {
+    "team1": "4./Ada.",
+    "team2": "2.-4./Glav.",
+    "goals1": null,
+    "goals2": null,
+    "court": "Teren 2",
+    "datetime": "2025-06-08T19:00"
+  }
+]

@@ -1,0 +1,6 @@
+{
+    "5. razred": ["5.A/D.Zel.", "5.B/D.Zel.", "5.N/D.Zel.", "5.A/Sob.", "5.B/Sob.", "5.C/Sob.", "5./Ada."],
+    "6. razred": ["6.A/D.Zel.", "6.B/Sob.", "6.B/D.Zel.", "6.N/D.Zel.", "6.A/Sob.", "6./Ada.", "6.B/M.Bis."],
+    "7. razred": ["7.A/D.Zel.", "7.B/D.Zel.", "7.N/D.Zel.", "7.A/Sob.", "7.B/Sob.", "7.I/Ada.", "7.II/Ada."],
+    "8. razred": ["8.C/Sob.", "8.C/D.Zel.", "8.A/Sob.", "8.B/Sob.", "8.A/Ada.", "8.B/Ada."]
+}
