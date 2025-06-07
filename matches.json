@@ -506,8 +506,8 @@
   {
     "team1": "7.A/Sob.",
     "team2": "7.B/Sob.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 2,
+    "goals2": 1,
     "court": "Teren 2",
     "datetime": "2025-06-07T17:21"
   },
