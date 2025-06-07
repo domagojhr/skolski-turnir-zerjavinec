@@ -610,8 +610,8 @@
   {
     "team1": "8.A/Sob.",
     "team2": "8.B/Ada.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 1,
+    "goals2": 2,
     "court": "Teren 1",
     "datetime": "2025-06-07T19:20"
   },
