@@ -434,24 +434,24 @@
   {
     "team1": "7.A/D.Zel.",
     "team2": "7.A/Sob.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 0,
+    "goals2": 5,
     "court": "Teren 1",
     "datetime": "2025-06-07T16:13"
   },
   {
     "team1": "7.B/D.Zel.",
     "team2": "7.N/D.Zel.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 0,
+    "goals2": 0,
     "court": "Teren 2",
     "datetime": "2025-06-07T16:13"
   },
   {
     "team1": "7.I/Ada.",
     "team2": "7.II/Ada.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 0,
+    "goals2": 1,
     "court": "Teren 1",
     "datetime": "2025-06-07T16:30"
   },
