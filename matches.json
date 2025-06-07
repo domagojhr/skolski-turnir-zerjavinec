@@ -354,16 +354,16 @@
   {
     "team1": "8.C/Sob.",
     "team2": "8.C/D.Zel.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 1,
+    "goals2": 6,
     "court": "Teren 1",
     "datetime": "2025-06-07T14:48"
   },
   {
     "team1": "8.A/Sob.",
     "team2": "8.B/Sob.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 0,
+    "goals2": 3,
     "court": "Teren 2",
     "datetime": "2025-06-07T14:48"
   },
