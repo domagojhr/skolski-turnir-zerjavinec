@@ -290,16 +290,16 @@
   {
     "team1": "5.A/D.Zel.",
     "team2": "5./Ada.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 0,
+    "goals2": 5,
     "court": "Teren 1",
     "datetime": "2025-06-07T13:06"
   },
   {
     "team1": "6.B/D.Zel.",
     "team2": "6.A/Sob.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 0,
+    "goals2": 3,
     "court": "Teren 2",
     "datetime": "2025-06-07T13:06"
   },
