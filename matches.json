@@ -418,8 +418,8 @@
   {
     "team1": "7.B/Sob.",
     "team2": "7.II/Ada.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 5,
+    "goals2": 0,
     "court": "Teren 1",
     "datetime": "2025-06-07T15:56"
   },
