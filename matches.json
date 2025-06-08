@@ -626,64 +626,64 @@
   {
     "team1": "1.A/Sob.",
     "team2": "1.B/Sob.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 3,
+    "goals2": 0,
     "court": "Teren 1",
     "datetime": "2025-06-08T09:00"
   },
   {
     "team1": "2.A/D.Zel.",
     "team2": "2.B/D.Zel.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 0,
+    "goals2": 4,
     "court": "Teren 2",
     "datetime": "2025-06-08T09:00"
   },
   {
     "team1": "2.A/Sob.",
     "team2": "2.B/Sob.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 1,
+    "goals2": 1,
     "court": "Teren 1",
     "datetime": "2025-06-08T09:20"
   },
   {
     "team1": "2.C/Sob.",
     "team2": "2./Ada.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 2,
+    "goals2": 1,
     "court": "Teren 2",
     "datetime": "2025-06-08T09:20"
   },
   {
     "team1": "1.A/Sob.",
     "team2": "1./Ada.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 3,
+    "goals2": 0,
     "court": "Teren 1",
     "datetime": "2025-06-08T09:40"
   },
   {
     "team1": "2.A/D.Zel.",
     "team2": "2.A/Sob.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 0,
+    "goals2": 9,
     "court": "Teren 1",
     "datetime": "2025-06-08T10:00"
   },
   {
     "team1": "2.B/D.Zel.",
     "team2": "2.B/Sob.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 1,
+    "goals2": 2,
     "court": "Teren 2",
     "datetime": "2025-06-08T10:00"
   },
   {
     "team1": "1.B/Sob.",
     "team2": "1./Ada.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 3,
+    "goals2": 0,
     "court": "Teren 1",
     "datetime": "2025-06-08T10:20"
   },
