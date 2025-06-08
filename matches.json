@@ -914,16 +914,16 @@
   {
     "team1": "3.C/Sob.",
     "team2": "3./Ada.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 0,
+    "goals2": 4,
     "court": "Teren 1",
     "datetime": "2025-06-08T19:00"
   },
   {
     "team1": "4./Ada.",
     "team2": "2.-4./Glav.",
-    "goals1": null,
-    "goals2": null,
+    "goals1": 1,
+    "goals2": 3,
     "court": "Teren 2",
     "datetime": "2025-06-08T19:00"
   }
